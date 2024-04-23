@@ -11,7 +11,7 @@ import (
 	"github.com/adrg/xdg"
 )
 
-//go:generate wget https://git.savannah.gnu.org/cgit/config.git/plain/config.guess
+//go:generate wget -q https://git.savannah.gnu.org/cgit/config.git/plain/config.guess -O config.guess
 //go:embed config.guess
 var configguess []byte
 

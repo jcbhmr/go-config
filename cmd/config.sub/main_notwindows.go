@@ -11,7 +11,7 @@ import (
 	"github.com/adrg/xdg"
 )
 
-//go:generate wget https://git.savannah.gnu.org/cgit/config.git/plain/config.sub
+//go:generate wget -q https://git.savannah.gnu.org/cgit/config.git/plain/config.sub -O config.sub
 //go:embed config.sub
 var configsub []byte
 
