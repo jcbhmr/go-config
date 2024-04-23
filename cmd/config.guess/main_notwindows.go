@@ -11,6 +11,8 @@ import (
 	"github.com/adrg/xdg"
 )
 
+// TODO: Use a portable Go-integrated version of Wget
+
 //go:generate wget -q https://git.savannah.gnu.org/cgit/config.git/plain/config.guess -O config.guess
 //go:embed config.guess
 var configguess []byte

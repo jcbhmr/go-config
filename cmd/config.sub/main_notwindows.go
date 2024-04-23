@@ -11,6 +11,8 @@ import (
 	"github.com/adrg/xdg"
 )
 
+// TODO: Use a portable Go-integrated version of Wget
+
 //go:generate wget -q https://git.savannah.gnu.org/cgit/config.git/plain/config.sub -O config.sub
 //go:embed config.sub
 var configsub []byte
