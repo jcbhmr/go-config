@@ -9,6 +9,19 @@ The CLI wrappers should work in all places where `config.guess` and `config.sub`
 go install github.com/jcbhmr/go-config/cmd/...@latest
 ```
 
+Or install it locally to one project
+
+```sh
+go get github.com/jcbhmr/go-config
+```
+
+```go
+// tools.go
+//go:build tools
+package tools
+import _ "github.com/jcbhmr/go-config"
+```
+
 ## Usage
 
 There are two cmd binaries included in this project: `config.guess` and `config.sub`. `config.guess` will print out the current computer's target triplet. `config.sub` takes in a single argument and will try to match it against a list of well-known aliases and print out the full canonical target triplet.
