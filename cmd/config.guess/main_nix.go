@@ -1,4 +1,4 @@
-//go:build !windows
+//go:build aix || android || darwin || dragonfly || freebsd || linux || netbsd || openbsd || plan9 || solaris
 
 package main
 
